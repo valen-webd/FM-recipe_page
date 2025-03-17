@@ -134,14 +134,20 @@ main h1 {
     width: 100%;
 }
 
+.nutrition th,
 .nutrition  td {
     border-bottom: 1px solid var(--stone-150);
     padding: 1rem;
+    text-align: left;
 }
 
-.nutrition td:nth-child(2) {
+.nutrition td {
     font-weight: 700;
     color: var(--brown-800);
+}
+
+.nutrition tr:last-child :is(td, th) {
+    border: none;
 }
 
 /* FOOTER */
